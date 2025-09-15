@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TechX - Job Application</title>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/icon.svg">
+  <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/88e37bff79.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<header>
+  <nav class="res-row nav-header">
+    <div class="col-lg-3 nav-logo">
+      <img src="../images/logo.png" width="200" height="70" alt="TechX logo"/> 
+    </div>
+    <div class="col-lg-9 nav-list">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a class="active" href="apply.html">Apply</a>
+      <a href="about.html">About</a>      
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Job Application Form</h2>
+  <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    
+    <!-- Job Selection -->
+    <fieldset>
+      <legend>Job Information</legend>
+      <label for="jobref">Job Reference:</label>
+      <select id="jobref" name="jobref" required>
+        <option value="" disabled selected>Select a job</option>
+        <option value="IT001">IT001 – IT Support Technician</option>
+        <option value="UX002">UX002 – UI/UX Designer</option>
+      </select>
+    </fieldset>
+
+    <!-- Personal Info -->
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" maxlength="20" required placeholder="John">
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" maxlength="20" required placeholder="Doe">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      
+      <label>Gender:</label><br>
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+
+    <!-- Contact Info -->
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="address">Street Address:</label>
+      <input type="text" id="address" name="address" maxlength="40" required placeholder="123 Main St">
+
+      <label for="suburb">Suburb/Town:</label>
+      <input type="text" id="suburb" name="suburb" maxlength="40" required>
+
+      <label for="state">State:</label>
+<select id="state" name="state" required>
+  <option value="" disabled selected>Select State</option>
+  <option value="johor">Johor</option>
+  <option value="kedah">Kedah</option>
+  <option value="kelantan">Kelantan</option>
+  <option value="melaka">Melaka</option>
+  <option value="negeri_sembilan">Negeri Sembilan</option>
+  <option value="pahang">Pahang</option>
+  <option value="penang">Pulau Pinang</option>
+  <option value="perak">Perak</option>
+  <option value="perlis">Perlis</option>
+  <option value="sabah">Sabah</option>
+  <option value="sarawak">Sarawak</option>
+  <option value="selangor">Selangor</option>
+  <option value="terengganu">Terengganu</option>
+  <option value="kuala_lumpur">Wilayah Persekutuan Kuala Lumpur</option>
+  <option value="putrajaya">Wilayah Persekutuan Putrajaya</option>
+  <option value="labuan">Wilayah Persekutuan Labuan</option>
+</select>
+
+
+      <label for="postcode">Postcode:</label>
+      <input type="text" id="postcode" name="postcode" pattern="\d{4}" required placeholder="e.g. 3000">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="\d{8,12}" required placeholder="e.g. 0102345678">
+    </fieldset>
+
+    <!-- Skills -->
+    <fieldset>
+      <legend>Skills</legend><br>
+      <label><input type="checkbox" name="skills" value="networking"> Networking</label>
+      <label><input type="checkbox" name="skills" value="design"> Design</label>
+      <label><input type="checkbox" name="skills" value="programming"> Programming</label>
+      <label><input type="checkbox" name="skills" value="database"> Database Management</label>
+    </fieldset>
+
+    <label for="otherskills">Other Skills:</label>
+    <textarea id="otherskills" name="otherskills" rows="4" placeholder="List any other relevant skills..."></textarea>
+
+    <button type="submit"><i class="fa-solid fa-paper-plane"></i> Submit Application</button>
+  </form>
+</main>
+
+<footer class="container">
+  <hr>
+  <p class="copyright">© 2025 TechX Careers – All Rights Reserved</p>
+  <p><a href="YOUR_JIRA_PROJECT_LINK_HERE" target="_blank">View Jira Project</a></p>
+</footer>
+
+</body>
+</html>
