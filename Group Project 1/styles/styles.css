@@ -9,9 +9,10 @@
 :root {
   --primary: #223d0de6;
   --accent: #9fe870;
-  --light: #f4f4f4;
-  --dark: #222;
+  --light: #ffffff;
+  --dark: #000000;
 }
+
 
 .about-page h2 {
   margin: 20px 0;
@@ -241,7 +242,7 @@ h3{
 .logo{
     font-size: 28px;
     font-weight: bold;
-    color: #016F5B;
+    color: #163300;
 }
 
 body {
@@ -309,7 +310,7 @@ a > img:hover {
 
 .nav-list >  a:hover , .nav-list >  a.active{
 color: white;
-background-color: #00854D;
+background-color: #9fe870;
 border-radius: 10px;
 
 }
@@ -324,7 +325,7 @@ border-radius: 10px;
     font-size: 17px;
     padding: 10px;
     color: #fff;
-    background-color: #00854D;
+    background-color: #9fe870;
     border-radius: 30%;
     text-decoration: none;
     cursor: pointer;
@@ -375,7 +376,7 @@ border-radius: 10px;
   
   .popup > h2 {
     margin-top: 0;
-    color: #00854D;
+    color: #9fe870;
     padding-bottom: 15px;
     text-align: left;
 
@@ -444,7 +445,7 @@ border-radius: 10px;
     padding: 12px 34px;
     border: none;
     text-decoration: none;
-    background: #00854D;
+    background: #9fe870;
     color: white;
     font-size: 18px;
     border-radius: 10px;
@@ -470,7 +471,7 @@ h3 ,h2{
 
 
 h3{
-    color: #016F5B;
+    color: #163300;
     
 }
 
@@ -526,7 +527,7 @@ li p{
 .component{
     width: 90%;
     height: auto;
-    background-color: #016F5B;
+    background-color: #163300;
     border-radius: 30px;
     margin: 50px auto auto;
     display: flex;
@@ -670,7 +671,7 @@ input[name="r"]{
 
 .section4{
     color: white;
-    background-color: #016F5B;
+    background-color: #163300;
     
     
 }
@@ -732,11 +733,11 @@ margin-bottom: 20px;
 }
 .contact_us_content > h2{
     text-align: left;
-    color: #016F5B;
+    color: #163300;
 }
 .contact_us_content > h3{
     text-align: left;
-    color: #016F5B;
+    color: #163300;
     padding-bottom: 25px;
 }
 
@@ -832,7 +833,7 @@ div select{
 footer{
     width: 100%;
     bottom: 0;
-    background: #016F5B;
+    background: #163300;
     color: #fff;
     padding: 55px 0 10px 0;
    
@@ -1038,7 +1039,7 @@ hr{
     font-weight: 600;
     margin-bottom: 0;
     margin-left: auto;
-    color: #00854D;
+    color: #9fe870;
 }
 
 /*footer 
@@ -1208,7 +1209,7 @@ text-align: right;
     outline: none;
     border-radius: 25px;
     transition: all .5s ease-in-out;
-    background-color: #016F5B;
+    background-color: #163300;
     padding-right: 40px;
     color:#fff;
   }
@@ -1231,13 +1232,13 @@ text-align: right;
     position: absolute;
     right: 0px;
     color:#fefefe ;
-    background-color: #016F5B;
+    background-color: #163300;
     pointer-events: painted;  
   }
   .btn-search:focus ~ .input-search{
     width: 300px;
     border-radius: 10px;
-    background-color: #00854D;
+    background-color: #9fe870;
     border-bottom:1px solid rgba(255,255,255,.5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
     font-weight: 500;
@@ -1248,7 +1249,7 @@ text-align: right;
   .input-search:focus{
     width: 300px;
     border-radius: 10px;
-    background-color: #016F5B;
+    background-color: #163300;
     border-bottom:1px solid rgba(255,255,255,.5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1324,14 +1325,14 @@ text-align: right;
     font-weight: 600;
     margin-bottom: 0;
     margin-left: auto;
-    color: #00854D;
+    color: #9fe870;
 }
 
 
 /* furniture_content */
 
 .furniture_content > h1{
-    color:  #00854D;
+    color:  #9fe870;
 }
 
 .furniture_content {
@@ -1355,7 +1356,7 @@ text-align: right;
 .review_green_content{
     width: 100vw;
     height: auto;
-    background-color: #016F5B;
+    background-color: #163300;
 }
 .review_green_parent {
     display: flex;
@@ -1438,7 +1439,7 @@ text-align: right;
 
 .basket_section > h1{
     padding-left: 45px;
-    color: #016F5B;
+    color: #163300;
 }
 
 .checkout_content{
@@ -1541,4 +1542,4 @@ text-align: right;
     margin-bottom: 0;
     color: #5c5c5c;
     font-size: 13px;
-}
+} 
