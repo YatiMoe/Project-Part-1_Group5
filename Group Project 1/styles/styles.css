@@ -4,55 +4,69 @@
 
 /* Color Variables */
 
+/*about*/
 
-    form {
-      max-width: 700px;
-      margin: 30px auto;
-      background: #f9f9f9;
-      padding: 25px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      font-family: 'Poppins', sans-serif;
-    }
-    form label {
-      display: block;
-      margin-top: 12px;
-      font-weight: 500;
-    }
-    form input, form select, form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-    }
-    fieldset {
-      margin-top: 20px;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    legend {
-      font-weight: 600;
-      padding: 0 6px;
-    }
-    button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #163300;
-      color: #fff;
-      font-size: 15px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #0f2200;
-    }
+:root {
+  --primary: #016F5B;
+  --accent: #41AF6D;
+  --light: #f4f4f4;
+  --dark: #222;
+}
 
-        .job-card {
+.about-page h2 {
+  margin: 20px 0;
+  color: var(--primary);
+  text-align: center;
+}
+
+.responsive-img, .group-photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.member-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+.member-list li {
+  background: var(--light);
+  margin: 10px 0;
+  padding: 12px;
+  border-left: 5px solid var(--accent);
+  transition: background 0.3s;
+}
+.member-list li:hover {
+  background: #eaf8f0;
+}
+
+.info-table table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+.info-table th, .info-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.info-table tr:hover {
+  background: #f9f9f9;
+}
+.info-table th {
+  background: var(--primary);
+  color: white;
+}
+
+
+/*about*/
+
+/*Job*/
+  .job-card {
       background: #fff;
       border: 1px solid #ddd;
       border-radius: 10px;
@@ -95,6 +109,7 @@
       margin-top: 0;
       color: #163300;
     }
+/*Job*/
 
 .res-row{
     display: flex;
@@ -189,11 +204,11 @@ h1{
 }
 
 span{
-    color: #163300;
+    color: #41AF6D;
 }
 
 .greenhighlight{
-    color: #9fe870;
+    color: #7DE4A1;
 }
 
 p{
@@ -294,7 +309,7 @@ a > img:hover {
 
 .nav-list >  a:hover , .nav-list >  a.active{
 color: white;
-background-color: #163300;
+background-color: #00854D;
 border-radius: 10px;
 
 }
@@ -459,8 +474,6 @@ h3{
     
 }
 
-h4 {color: #9fe870}
-
 /* Section3-green component */
 .section2 , .section3 , .section4-content{
     width: 80%;
@@ -493,7 +506,7 @@ li p{
 
 .picture{
     display: flex;
-    width: 50%;
+    width: 45%;
     height: auto;
 }
 
@@ -511,9 +524,9 @@ li p{
 }
 
 .component{
-    width: 80%;
+    width: 90%;
     height: auto;
-    background-color: #163300;
+    background-color: #016F5B;
     border-radius: 30px;
     margin: 50px auto auto;
     display: flex;
@@ -780,8 +793,7 @@ div textarea{
     border-bottom: 2px solid rgb(48, 48, 48);
     margin-bottom: 35px;
     background-color: transparent;
-    color: rgb(48, 48, 48);
-    background-color: #ececec;
+    color: rgb(48, 48, 48)
 }
 
 div select{
@@ -820,7 +832,7 @@ div select{
 footer{
     width: 100%;
     bottom: 0;
-    background: #163300;
+    background: #016F5B;
     color: #fff;
     padding: 55px 0 10px 0;
    
@@ -1312,7 +1324,7 @@ text-align: right;
     font-weight: 600;
     margin-bottom: 0;
     margin-left: auto;
-    color: #163300;
+    color: #00854D;
 }
 
 
@@ -1343,7 +1355,7 @@ text-align: right;
 .review_green_content{
     width: 100vw;
     height: auto;
-    background-color: #163300;
+    background-color: #016F5B;
 }
 .review_green_parent {
     display: flex;
