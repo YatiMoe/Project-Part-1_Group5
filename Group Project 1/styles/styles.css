@@ -1,4 +1,4 @@
-/* Author: Group 5
+/* Author: Techx (Group5)
    Purpose: COS10026 Project - Group Website
 */
 
@@ -12,6 +12,76 @@
   --light: #ffffff;
   --dark: #000000;
 }
+
+.apply_parent{
+    display: flex;
+    justify-content: space-between;
+}
+/*.gender_parent{*/
+/*    display: flex;*/
+
+/*}*/
+.class_design{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+.apply_one , .apply_two , .apply_three {
+    width: 80%;
+    margin: 20px 20px;
+}
+
+.apply_three{
+    width: 95%;
+    margin: 20px 20px;
+}
+.button_design_one{
+    background-color: #06D85F;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+}
+ form {
+     background: #fff;
+     padding: 25px;
+     border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+     width: 95%;
+     margin: 0 auto;
+     margin-bottom: 100px;
+ }
+
+.text_design{
+    background-color: #ececec;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin-top: 10px;
+    border: none;
+ }
+fieldset , .other_skill {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+legend {
+    font-weight: 600;
+    color: #163300;
+    padding: 0 10px;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+    display: flex;
+}
+
 
 
 .about-page h2 {
@@ -62,7 +132,70 @@
   background: var(--primary);
   color: white;
 }
+/*Team-member_click_code*/
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 100px;
+}
+.team-member {
+    text-align: center;
+    width: 100%;
+}
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
 
+.img_member{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.mem_parent{
+    display: flex;
+    justify-content: center;
+}
+
+/* Modal base */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* Show modal when targeted */
+.modal:target {
+    display: block;
+}
+
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 700px;
+    border-radius: 8px;
+}
+.mem_one {
+    display: flex;
+   justify-content: center;
+    margin: 30px;
+
+}
+.mem_two {
+    width: 70%;
+}
+.close {
+    float: right;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+/*Team-member_click_code*/
 
 /*about*/
 
@@ -75,13 +208,32 @@
       margin-bottom: 30px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       transition: transform 0.2s;
+      width: 450px;
     }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 14px;
+}
+th {
+    background-color: #f2f2f2;
+}
+td {
+    height: 60px;
+    vertical-align: middle;
+}
+
     .job-card:hover {
       transform: translateY(-3px);
     }
     .job-card img {
       width: 100%;
-      max-width: 350px;
+
       height: auto;
       border-radius: 8px;
       margin-bottom: 15px;
@@ -214,7 +366,7 @@ span{
 
 p{
     font-size: calc(1.3em);
-    margin-bottom: 30px;
+
 }
 
 h2{
@@ -275,7 +427,8 @@ a > img:hover {
 .nav-header{
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
-    padding: 13px 0px;
+    padding: 13px 0;
+    align-items: center;
     
 }
 
@@ -290,11 +443,11 @@ a > img:hover {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100%;
     flex-wrap: wrap;
-    
+    padding-right: 100px;
 }
 
 
@@ -306,6 +459,7 @@ a > img:hover {
     color: black;
     padding: 20px 30px;
     border-right: 1px solid #f4f4f4;
+    margin: 0 10px;
 }
 
 .nav-list >  a:hover , .nav-list >  a.active{
@@ -442,14 +596,16 @@ border-radius: 10px;
 }
 
 .primary{
-    padding: 12px 34px;
+    padding: 18px 34px;
     border: none;
     text-decoration: none;
     background: #9fe870;
     color: white;
     font-size: 18px;
     border-radius: 10px;
-    margin-bottom: calc(3vw + 2em);
+    width: 250px;
+    margin-top: 20px;
+    text-align: center;
 }
 .primary:hover{
     background: #328754;
@@ -467,6 +623,8 @@ img .mockup{
 h3 ,h2{
     text-align: center;
     font-weight: 600;
+    margin-bottom: 30px;
+
 }
 
 
@@ -484,10 +642,13 @@ h3{
 
 .section3 > h2 , .section2 > h2 , .section4-content > h2 {
     font-size: 28px;
+    margin-bottom: 30px;
 }
 
 .section3 > h3 , .section2 > h3 , .section4 > h3 {
     font-size: 21px;
+    margin-bottom: 30px;
+
 }
 
 li h3{
@@ -539,6 +700,7 @@ li p{
 
 .img_component{
     padding: 30px 0;
+    width: 50%;
 }
 
 .img_component img{
@@ -546,29 +708,36 @@ li p{
     display: block;
 }
 
-.component-content{
-    padding: 50px 0;
-    margin: 0 auto;
-}
 
 .component-content > p,h4{
     padding-top: 10px;
+    width: 100%;
+    margin: 15px 0;
     color: white;
-    padding-left: 50px;
 }
+
+.job-card > p,h4{
+    padding-top: 10px;
+    width: 100%;
+    margin: 15px 0;
+    color: black;
+}
+
 
 .component-content > h4{
     font-size: 28px;
     font-weight: 600;
+
 }
 
 .component-content > p{
     font-size: 15px;
-    
+
 }
 
 .component-content{
-    width: 50%;
+    width: 30%;
+    margin-left: 75px;
 }
 
 .button-component-content{
@@ -579,7 +748,7 @@ li p{
     font-size: 16px;
     background-color: transparent;
     text-decoration: none;
-    margin-left: 50px;
+    margin-top: 10px;
 }
 .button-component-content:hover{
     padding: 12px 25px;
@@ -591,6 +760,25 @@ li p{
     
 }
 
+.container_two{
+
+   align-items: center;
+}
+.job_container, .parent_cotainer_why {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.parent_cotainer_why > .container_one , .container_two{
+    width: 50%;
+}
+.container_one , .container_two{
+  margin: auto;
+}
+
+.parent_cotainer_why {
+    margin: 0 200px;
+}
 /* Section3 */
 
 .section3{
@@ -772,7 +960,22 @@ margin-bottom: 20px;
     padding: 5px;
 }
 
-label > input , select{
+label > input {
+    width: 40px;
+    height: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    background: none;
+}
+
+
+.form_input > label {
     width: 400px;
     height: 50px;
     margin-bottom: 30px;
@@ -786,8 +989,30 @@ label > input , select{
     background: none;
 }
 
+label > .blank{
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    border: none;
+}
+label > select{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    background: none;
+}
+
+
+
 div textarea{
-    height: 130px;
+    height: 90px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -1542,4 +1767,4 @@ text-align: right;
     margin-bottom: 0;
     color: #5c5c5c;
     font-size: 13px;
-} 
+}
